@@ -1,13 +1,14 @@
 public class Miles {
     public static void main(String[] args) {
-        int ticket = 600;
-        int mile = 20;
-        int bonus = ticket/mile;
-        System.out.println("Ваш бонус: " + bonus + " миля(ей)");
-
-
-
-
-
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println(miles);
     }
 }
+
+
+
+
+
+
